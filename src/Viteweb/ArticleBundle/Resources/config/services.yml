@@ -1,0 +1,7 @@
+parameters:
+    viteweb_article.calendar.class: Viteweb\ArticleBundle\Calendar\CalendarView
+
+services:
+    viteweb_article.calendar:
+        class: %viteweb_article.calendar.class%
+        arguments: [@service_container]

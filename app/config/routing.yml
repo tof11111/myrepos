@@ -1,0 +1,4 @@
+viteweb_article:
+    resource: "@VitewebArticleBundle/Resources/config/routing.yml"
+    prefix:   /articles/
+

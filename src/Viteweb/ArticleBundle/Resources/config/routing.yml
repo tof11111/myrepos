@@ -1,0 +1,3 @@
+viteweb_article_homepage:
+    pattern:  /
+    defaults: { _controller: VitewebArticleBundle:Default:index }
