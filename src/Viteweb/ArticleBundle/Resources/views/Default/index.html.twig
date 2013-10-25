@@ -1,6 +1,6 @@
 {% extends "::base.html.twig" %}
 {% block body %}
-<form method="post" action="{{ path('viteweb_article_homepage') }}">
+<form method="post" action="{{ path('viteweb_article_homepage') }}" {{ form_enctype(form) }}>
     
 {{ form_errors( form ) }}    
 {{ form_widget( form ) }}

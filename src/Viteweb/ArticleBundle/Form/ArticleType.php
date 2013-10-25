@@ -19,6 +19,7 @@ class ArticleType extends AbstractType
             ->add('slib','text')
             ->add('llib','textarea')
             ->add('state','checkbox')
+            ->add('file','file')
             ->add('cat','entity',array('class'=>'VitewebArticleBundle:Categorie',
                 'property'=>'name',
                 'multiple'=>false

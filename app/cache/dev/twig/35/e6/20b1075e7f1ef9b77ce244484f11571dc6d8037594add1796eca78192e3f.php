@@ -30,7 +30,9 @@ class __TwigTemplate_35e620b1075e7f1ef9b77ce244484f11571dc6d8037594add1796eca781
         // line 3
         echo "<form method=\"post\" action=\"";
         echo $this->env->getExtension('routing')->getPath("viteweb_article_homepage");
-        echo "\">
+        echo "\" ";
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getContext($context, "form"), 'enctype');
+        echo ">
     
 ";
         // line 5
@@ -60,6 +62,6 @@ class __TwigTemplate_35e620b1075e7f1ef9b77ce244484f11571dc6d8037594add1796eca781
 
     public function getDebugInfo()
     {
-        return array (  41 => 6,  37 => 5,  31 => 3,  28 => 2,);
+        return array (  43 => 6,  39 => 5,  31 => 3,  28 => 2,);
     }
 }

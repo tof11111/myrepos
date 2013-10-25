@@ -27,7 +27,7 @@ class CalendarView {
     }
     
     public function getCalendar(){
-        return "Hello calendar 3";
+        return "Hello calendar";
     }
     
 }

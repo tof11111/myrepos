@@ -77,6 +77,12 @@ class Article
      */
     private $attributs;
 
+    /**
+     *
+     * @var \Symfony\Component\HttpFoundation\File\UploadedFile
+     */
+    private $file;
+    
 
     /**
      * Get id
@@ -298,8 +304,18 @@ class Article
     public function prePresist(){
         $this->dcre=new \DateTime(date("Y-m-d"));
         $this->dmod=new \DateTime(date("Y-m-d"));
+        echo $this->file->move(__DIR__.'/../../../../web/upload',$this->file->getClientOriginalName());
     }
     
+    public function getFile()
+    {
+        return $this->file;
+    }
     
+    public function setFile($file)
+    {
+        $this->file=$file;
+        return $this;
+    }
     
 }
